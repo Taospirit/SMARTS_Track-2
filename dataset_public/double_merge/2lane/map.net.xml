@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Fri 31 Jul 2020 05:32:53 PM CST by Eclipse SUMO netedit Version 1.6.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/ming/Projects/Gitlab/smarts/dai/track2/dataset_public/merge/2lane/map.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/ming/Projects/Gitlab/smarts/dai/track2/dataset_public/merge/2lane/map.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<net version="1.6" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-26.27,3.23,144.27,91.75" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":gneJ1_0" function="internal">
+        <lane id=":gneJ1_0_0" index="0" speed="15.00" length="7.79" shape="5.18,41.39 7.43,41.94 8.95,42.44 10.49,42.80 12.78,42.94"/>
+    </edge>
+    <edge id=":gneJ1_1" function="internal">
+        <lane id=":gneJ1_1_0" index="0" speed="11.02" length="8.90" shape="4.62,48.87 6.70,47.30 8.34,46.49 10.16,46.19 12.78,46.14"/>
+    </edge>
+    <edge id=":gneJ2_0" function="internal">
+        <lane id=":gneJ2_0_0" index="0" speed="15.00" length="7.58" shape="107.14,42.91 109.34,42.73 110.80,42.25 112.23,41.58 114.36,40.83"/>
+    </edge>
+    <edge id=":gneJ2_1" function="internal">
+        <lane id=":gneJ2_1_0" index="0" speed="10.34" length="8.90" shape="107.14,46.11 109.76,46.16 111.58,46.50 113.19,47.38 115.17,49.06"/>
+    </edge>
+
+    <edge id="left_bottom" from="gneJ5" to="gneJ1" priority="-1" shape="-26.27,5.57 -19.09,21.02 -17.39,24.26 -15.45,27.54 -13.56,30.44 -11.36,33.21 -8.79,35.59 -5.99,37.66 -2.92,39.62 0.33,41.44 3.65,42.72 13.04,44.54">
+        <lane id="left_bottom_0" index="0" speed="15.00" length="49.15" shape="-24.82,4.90 -17.66,20.31 -15.99,23.48 -14.09,26.70 -12.26,29.50 -10.18,32.12 -7.77,34.36 -5.08,36.34 -2.10,38.25 1.01,39.99 4.09,41.18 5.18,41.39"/>
+    </edge>
+    <edge id="left_top" from="gneJ0" to="gneJ1" priority="-1" shape="-14.96,86.84 -10.30,73.86 -8.91,70.01 -7.61,66.69 -6.12,63.55 -4.29,60.51 -2.19,57.59 0.17,54.90 2.76,52.43 5.55,50.17 13.04,44.54">
+        <lane id="left_top_0" index="0" speed="15.00" length="43.79" shape="-16.47,86.30 -11.81,73.32 -10.41,69.45 -9.08,66.05 -7.53,62.79 -5.63,59.63 -3.44,56.59 -0.99,53.79 1.70,51.23 4.62,48.87"/>
+    </edge>
+    <edge id="merged" from="gneJ1" to="gneJ2" priority="-1" spreadType="center">
+        <lane id="merged_0" index="0" speed="15.00" length="94.36" acceleration="1" shape="12.78,42.94 107.14,42.91"/>
+        <lane id="merged_1" index="1" speed="15.00" length="94.36" shape="12.78,46.14 107.14,46.11"/>
+    </edge>
+    <edge id="right_bottom" from="gneJ2" to="gneJ4" priority="-1" shape="107.14,44.51 115.49,42.18 119.36,40.50 122.76,38.71 126.10,36.51 129.20,34.19 131.80,31.72 134.16,29.14 136.33,26.17 138.12,22.94 139.45,19.61 140.73,16.20 144.27,3.23">
+        <lane id="right_bottom_0" index="0" speed="15.00" length="50.13" shape="114.36,40.83 114.95,40.67 118.67,39.06 121.95,37.33 125.18,35.20 128.17,32.97 130.66,30.60 132.92,28.13 134.98,25.31 136.67,22.25 137.96,19.03 139.21,15.71 142.73,2.81"/>
+    </edge>
+    <edge id="right_top" from="gneJ2" to="gneJ3" priority="-1" shape="107.14,44.51 112.66,48.93 115.36,51.39 117.63,54.09 119.66,56.99 121.60,59.98 123.32,63.18 124.83,66.63 133.75,91.75">
+        <lane id="right_top_0" index="0" speed="15.00" length="47.18" shape="115.17,49.06 116.52,50.28 118.90,53.11 120.99,56.10 122.98,59.16 124.76,62.48 126.32,66.04 135.26,91.21"/>
+    </edge>
+
+    <junction id="gneJ0" type="dead_end" x="-14.96" y="86.84" incLanes="" intLanes="" shape="-14.96,86.84 -17.97,85.76"/>
+    <junction id="gneJ1" type="priority" x="13.04" y="44.54" incLanes="left_bottom_0 left_top_0" intLanes=":gneJ1_0_0 :gneJ1_1_0" shape="12.78,47.74 12.78,41.34 10.05,41.10 9.11,40.84 8.18,40.53 7.04,40.18 5.49,39.82 4.88,42.96 6.49,43.81 6.54,44.50 6.08,45.35 5.12,46.38 3.66,47.59 5.58,50.14 7.89,48.47 8.85,48.06 9.87,47.84 11.13,47.75">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="gneJ2" type="priority" x="107.14" y="44.51" incLanes="merged_0 merged_1" intLanes=":gneJ2_0_0 :gneJ2_1_0" shape="114.17,50.31 116.18,47.81 113.85,45.22 113.39,44.22 113.39,43.41 113.86,42.80 114.79,42.38 113.93,39.29 111.44,40.24 110.58,40.66 109.71,41.00 108.63,41.23 107.13,41.31 107.13,47.71 110.01,47.82 111.02,48.06 111.95,48.51 112.95,49.24">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="gneJ3" type="dead_end" x="133.75" y="91.75" incLanes="right_top_0" intLanes="" shape="136.77,90.68 133.75,91.75"/>
+    <junction id="gneJ4" type="dead_end" x="144.27" y="3.23" incLanes="right_bottom_0" intLanes="" shape="141.18,2.39 144.27,3.23"/>
+    <junction id="gneJ5" type="dead_end" x="-26.27" y="5.57" incLanes="" intLanes="" shape="-26.27,5.57 -23.37,4.22"/>
+
+    <connection from="left_bottom" to="merged" fromLane="0" toLane="0" via=":gneJ1_0_0" dir="s" state="M"/>
+    <connection from="left_top" to="merged" fromLane="0" toLane="1" via=":gneJ1_1_0" dir="s" state="M"/>
+    <connection from="merged" to="right_bottom" fromLane="0" toLane="0" via=":gneJ2_0_0" dir="s" state="M"/>
+    <connection from="merged" to="right_top" fromLane="1" toLane="0" via=":gneJ2_1_0" dir="L" state="M"/>
+
+    <connection from=":gneJ1_0" to="merged" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ1_1" to="merged" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":gneJ2_0" to="right_bottom" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ2_1" to="right_top" fromLane="0" toLane="0" dir="L" state="M"/>
+
+</net>
