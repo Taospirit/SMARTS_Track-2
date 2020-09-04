@@ -7,7 +7,7 @@
 |2020.9.4|updata Q&A ||
 
 ## 文件说明：
-`orgin_zip_files/`：官方提供的原始zip文件
+`orgin_zip_files/`：官方提供的原始zip文件, 解压出来的就是下面两个文件
 
 `starter_kit/`: 安装脚本、说明文档、smarts的whl文件等
 
