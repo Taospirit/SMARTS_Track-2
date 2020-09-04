@@ -4,7 +4,7 @@
 |--|--|--|--|
 |2020.8.18|INIT|upload official files & datas||
 |2020.9.3|update README || 
-|2020.9.4|updata ERROR||
+|2020.9.4|updata Q&A ||
 
 ## 文件说明：
 `orgin_zip_files/`：官方提供的原始zip文件
