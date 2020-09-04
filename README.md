@@ -3,7 +3,9 @@
 |time|note|todo |version|
 |--|--|--|--|
 |2020.8.18|INIT|upload official files & datas||
-|2020.8.3|update README || 
+|2020.9.3|update README || 
+|2020.9.4|updata ERROR||
+
 ## 文件说明：
 `orgin_zip_files/`：官方提供的原始zip文件
 
@@ -33,9 +35,7 @@ chmod +x install_deps.sh # 不给权限好像无法直接执行
 ```
 如果以上安装出现问题，可用下面的命令自己手动安装
 ```bash
-sudo add-apt-repository ppa:sumo/stable
-sudo apt-get update
-
+sudo add-apt-repository ppa:sumo/stable && sudo apt-get update
 sudo apt-get install -y \
         libspatialindex-dev \
         sumo sumo-tools sumo-doc
@@ -46,6 +46,7 @@ sudo apt-get install -y \
 # 注意在conda环境下
 pip install --upgrade pip
 # install the dependencies
+cd starter_kit
 pip install smarts-0.3.7-py3-none-any.whl
 # install gym
 pip install gym
@@ -59,9 +60,10 @@ sumo-gui
 python train_example/keeplane_example.py --scenario xxx
 ```
 
-5. 编译测试集场景
+5. 编译测试集场景(已经生成了编译文件,可跳过)
 ```bash
 # 注：scl是安装好smarts后就会有的命令
+# an alternative approach is to compile the scenarios one by one: `scl scenario build ${scenario_dir}`
 scl scenario build-all dataset_public
 ```
 
@@ -84,4 +86,20 @@ python train/keeplane.py --scenario ../dataset_public/crossroads/2lane
 4. 查看smarts的环境api的说明文档
 ```bash
 scl docs
+```
+
+## Q&A
+### 1. ImportError: /opt/ros/kinetic/lib/python2.7/dist-packages/cv2.so: undefined symbol: PyCObject_Type
+- 这是经典的ros下的cv2不支持python3的错误.
+- 需要针对python3重新编译才行,相关资料在googel直接搜索即可.
+- 目前我在官方源代码中已经根据我自己环境改好了
+
+### 2. ModuleNotFoundError: No module named 'scenario'
+- 文件路径问题
+- 场景没编译
+
+### 3. sumo路径问题
+```bash
+echo "export SUMO_HOME="/usr/share/sumo"" >> ~/.bashrc
+source ~/.bashrc
 ```

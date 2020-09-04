@@ -1,0 +1,202 @@
+<CoordinateSystem> { Z-Up }
+
+<Polygon> {
+  <VertexRef> { 0 1 3 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 3 1 2 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 4 5 6 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 4 6 7 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 4 7 8 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 4 8 9 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 9 10 11 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 9 11 12 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 9 12 13 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 9 13 4 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 14 15 17 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 17 15 16 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 18 19 21 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 21 19 20 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 22 23 25 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 25 23 24 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 26 27 29 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 29 27 28 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 34 35 36 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 34 36 37 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 34 37 38 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 34 38 39 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 39 30 31 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 39 31 32 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 39 32 33 <Ref> { road_network_vpool } }
+}
+<Polygon> {
+  <VertexRef> { 39 33 34 <Ref> { road_network_vpool } }
+}
+<VertexPool> road_network_vpool {
+  <Vertex> 0 {
+    52.0972122557019 59.2299828891694 0
+  }
+  <Vertex> 1 {
+    52.0827877442981 56.1900171108306 0
+  }
+  <Vertex> 2 {
+    60.5127877442981 56.1500171108306 0
+  }
+  <Vertex> 3 {
+    60.5272122557019 59.1899828891694 0
+  }
+  <Vertex> 4 {
+    52.0619060440274 62.4298923016968 0
+  }
+  <Vertex> 5 {
+    52.0980939559726 59.3901076983032 0
+  }
+  <Vertex> 6 {
+    54.6835255904493 59.4208866463327 0
+  }
+  <Vertex> 7 {
+    56.5943092033335 59.6086515100265 0
+  }
+  <Vertex> 8 {
+    58.4467357400269 60.0827844926325 0
+  }
+  <Vertex> 9 {
+    60.8851336472309 60.9229047799885 0
+  }
+  <Vertex> 10 {
+    59.8948663527691 63.7970952200115 0
+  }
+  <Vertex> 11 {
+    57.5732642599731 62.9972155073675 0
+  }
+  <Vertex> 12 {
+    56.0656907966665 62.6113484899735 0
+  }
+  <Vertex> 13 {
+    54.5164744095507 62.4591133536673 0
+  }
+  <Vertex> 14 {
+    -44.7434534662491 59.0099960768275 0
+  }
+  <Vertex> 15 {
+    -44.7365465337509 55.9700039231725 0
+  }
+  <Vertex> 16 {
+    52.0934534662491 56.1900039231725 0
+  }
+  <Vertex> 17 {
+    52.0865465337509 59.2299960768275 0
+  }
+  <Vertex> 18 {
+    -44.7434538229366 62.209996076017 0
+  }
+  <Vertex> 19 {
+    -44.7365461770634 59.170003923983 0
+  }
+  <Vertex> 20 {
+    52.0834538229366 59.390003923983 0
+  }
+  <Vertex> 21 {
+    52.0765461770634 62.429996076017 0
+  }
+  <Vertex> 22 {
+    59.8773691644522 63.7909471081929 0
+  }
+  <Vertex> 23 {
+    60.9026308355478 60.9290528918071 0
+  }
+  <Vertex> 24 {
+    109.472630835548 78.3290528918071 0
+  }
+  <Vertex> 25 {
+    108.447369164452 81.1909471081929 0
+  }
+  <Vertex> 26 {
+    60.5229913841209 59.1899970564514 0
+  }
+  <Vertex> 27 {
+    60.5170086158791 56.1500029435486 0
+  }
+  <Vertex> 28 {
+    141.817008615879 55.9900029435486 0
+  }
+  <Vertex> 29 {
+    141.822991384121 59.0299970564514 0
+  }
+  <Vertex> 30 {
+    59.85 63.87 0
+  }
+  <Vertex> 31 {
+    58.26 63.31 0
+  }
+  <Vertex> 32 {
+    57.06 62.93 0
+  }
+  <Vertex> 33 {
+    56.05 62.7 0
+  }
+  <Vertex> 34 {
+    55.02 62.57 0
+  }
+  <Vertex> 35 {
+    52.08 62.51 0
+  }
+  <Vertex> 36 {
+    52.09 56.11 0
+  }
+  <Vertex> 37 {
+    60.52 56.07 0
+  }
+  <Vertex> 38 {
+    60.53 59.27 0
+  }
+  <Vertex> 39 {
+    60.93 60.86 0
+  }
+}

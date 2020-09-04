@@ -1,7 +1,18 @@
 import math
 import sys
 import gym
-import cv2
+# import cv2
+
+ROS_PATH = '/opt/ros/kinetic/lib/python2.7/dist-packages'
+VERSION = sys.version_info.major
+if VERSION == 2:
+    import cv2
+elif ROS_PATH in sys.path:
+    sys.path.remove(ROS_PATH)
+    import cv2
+    sys.path.append(ROS_PATH)
+    from cv_bridge import CvBridge, CvBridgeError
+
 import numpy as np
 import copy
 

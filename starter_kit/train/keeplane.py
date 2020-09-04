@@ -64,6 +64,9 @@ def main(_args):
 
     agents = {_id: agent_spec.build_agent() for _id, agent_spec in agents.items()}
 
+    import webbrowser
+    webbrowser.open('http://localhost:8081/')
+    
     for ie in range(30):
         step = 0
         print(f"\n---- Starting episode: {ie}...")
